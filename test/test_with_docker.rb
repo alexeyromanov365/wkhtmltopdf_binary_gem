@@ -59,7 +59,7 @@ class WithDockerTest < Minitest::Test
 
   def test_with_ubuntu_24
     test_on_x86 with: 'ubuntu_24.04'
-   end
+  end
 
   def test_with_archlinux
     test_on_x86 with: 'archlinux'

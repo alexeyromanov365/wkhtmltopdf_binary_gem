@@ -57,8 +57,9 @@ suffix = case RbConfig::CONFIG['host_os']
                               os.start_with?('rhel_8.') ||
                               os.start_with?('ol_8.') ||
                               os.start_with?('almalinux_8') ||
-                              os.start_with?('alinux_') ||
-                              os == 'amzn_2023'
+                              os.start_with?('alinux_')
+
+           os = 'almalinux_9' if os == 'amzn_2023'
 
            os_based_on_debian_9 = os.start_with?('debian_9') ||
                                   os.start_with?('deepin')
